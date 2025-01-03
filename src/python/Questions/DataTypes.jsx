@@ -4,159 +4,139 @@ import { FaSmile } from 'react-icons/fa';
 
 const questions = [
   {
-    question: "What is Python?",
-    options: [
-      "A programming language",
-      "A type of snake",
-      "A database",
-    ],
+    question: "Write a program to check if a given number is even or odd. What operator is used?",
+    options: ["%", "/", "//"],
     name: "q1",
   },
   {
-    question: "Which programming paradigm does Python support?",
-    options: [
-      "Object-Oriented",
-      "Functional",
-      "Both Object-Oriented and Functional",
-    ],
+    question: "Calculate the total price after a 5% sales tax for an item with price 100. What is the output?",
+    options: ["105", "95", "100.5"],
     name: "q2",
   },
   {
-    question: "What type of language is Python?",
-    options: ["Interpreted", "Compiled", "Assembly"],
+    question: "Given a complex number `3 + 4j`, what is the imaginary part?",
+    options: ["3", "4", "7"],
     name: "q3",
   },
   {
-    question: "What is Python mainly used for?",
-    options: ["Web Development", "Data Analysis", "All of the above"],
+    question: "Count the number of vowels in the string 'Python'. How many are there?",
+    options: ["1", "2", "3"],
     name: "q4",
   },
   {
-    question: "When was Python first released?",
-    options: ["1991", "2000", "1989"],
+    question: "Reverse the string 'Python'. What is the result?",
+    options: ["Python", "nohtyP", "thonPy"],
     name: "q5",
   },
   {
-    question: "Which of the following is a key feature of Python?",
-    options: [
-      "Interpreted and Interactive",
-      "Low-level programming",
-      "Static typing",
-    ],
+    question: "Is the word 'radar' the same when read backward?",
+    options: ["Yes", "No", "I don't know"],
     name: "q6",
   },
+
   {
-    question: "What is the correct extension for a Python file?",
-    options: [".python", ".py", ".p"],
+    question: "What is the data type of `True` in Python?",
+    options: ["int", "bool", "str"],
     name: "q7",
   },
   {
-    question: "Which of the following is true about Python?",
-    options: [
-      "It is case-sensitive",
-      "It is not case-sensitive",
-      "It is partially case-sensitive",
-    ],
+    question: "What is the result of adding '10' + '15' in Python?",
+    options: ["25", "1015", "20"],
     name: "q8",
-  },
+},
+
   {
-    question: "How do you print \"Hello, World!\" in Python?",
-    options: [
-      "echo(\"Hello, World!\")",
-      "printf(\"Hello, World!\")",
-      "print(\"Hello, World!\")",
-    ],
+    question: "How many days does February have in a leap year?",
+    options: ["28", "29", "30"],
     name: "q9",
   },
+
   {
-    question: "Which of the following is not a valid Python keyword?",
-    options: ["def", "class", "define"],
+    question: "What is the sum of numbers in the list [1, 2, 3, 4, 5]?",
+    options: ["10", "14", "15"],
     name: "q10",
   },
   {
-    question: "What does the `print()` function do in Python?",
-    options: [
-      "Outputs text to the console",
-      "Saves text to a file",
-      "Terminates the program",
-    ],
+    question: "Find the largest number in the list [10, 20, 30].",
+    options: ["10", "20", "30"],
     name: "q11",
   },
   {
-    question: "Which of these is the correct way to create a variable in Python?",
-    options: ["var x = 10", "x = 10", "int x = 10"],
+    question: "Remove duplicates from the list [1, 2, 2, 3, 4]. What is the result?",
+    options: ["[1, 2, 2, 3, 4]", "[1, 2, 3, 4]", "[1, 3, 4]"],
     name: "q12",
   },
   {
-    question: "What is the output of `print(2 + 3 * 4)` in Python?",
-    options: ["14", "20", "24"],
+    question: "What function gets the number of items in a tuple?",
+    options: ["size()", "len()", "count()"],
     name: "q13",
   },
   {
-    question: "Which function is used to take input from the user in Python?",
-    options: ["scan()", "input()", "read()"],
+    question: "What is the output of `len((1, 2, 3))`?",
+    options: ["2", "3", "4"],
     name: "q14",
   },
   {
-    question: "Which of the following is the correct way to start a Python comment?",
-    options: [
-      "# This is a comment",
-      "// This is a comment",
-      "/* This is a comment */",
-    ],
+    question: "How do you create a dictionary in Python?",
+    options: ["{}", "[]", "()"],
     name: "q15",
   },
   {
-    question: "What is the result of `10 // 3` in Python?",
-    options: ["3", "3.33", "4"],
+    question: "What is the default value of a variable in Python if not initialized?",
+    options: ["0", "None", "Undefined"],
     name: "q16",
   },
   {
-    question: "Which of these is not a valid Python data type?",
-    options: ["list", "set", "array"],
+    question: "How do you convert a number to a string in Python?",
+    options: ["str()", "int()", "float()"],
     name: "q17",
   },
   {
-    question: "Which of these keywords is used to define a function in Python?",
-    options: ["function", "func", "def"],
+    question: "Which method removes an item from a list?",
+    options: ["delete()", "remove()", "discard()"],
     name: "q18",
   },
   {
-    question: "What will be the output of `len(\"Python\")`?",
-    options: ["5", "6", "7"],
+    question: "What does the `set()` function do?",
+    options: [
+      "Creates a tuple",
+      "Creates a dictionary",
+      "Creates a set",
+    ],
     name: "q19",
   },
   {
-    question: "Which of the following is not a valid variable name in Python?",
-    options: ["_myvar", "my_var", "2myvar"],
+    question: "What is the output of `type(3.14)`?",
+    options: ["<class 'int'>", "<class 'float'>", "<class 'complex'>"],
     name: "q20",
-  },
+  }
 ];
 
 const correctAnswers = {
-  q1: "A programming language",
-  q2: "Both Object-Oriented and Functional",
-  q3: "Interpreted",
-  q4: "All of the above",
-  q5: "1991",
-  q6: "Interpreted and Interactive",
-  q7: ".py",
-  q8: "It is case-sensitive",
-  q9: "print(\"Hello, World!\")",
-  q10: "define",
-  q11: "Outputs text to the console",
-  q12: "x = 10",
-  q13: "14",
-  q14: "input()",
-  q15: "# This is a comment",
-  q16: "3",
-  q17: "array",
-  q18: "def",
-  q19: "6",
-  q20: "2myvar",
+  q1: "%",
+  q2: "105",
+  q3: "4",
+  q4: "1",
+  q5: "nohtyP",
+  q6: "Yes",
+  q7: "bool",
+  q8: "1015",
+  q9: "29",
+  q10: "15",
+  q11: "30",
+  q12: "[1, 2, 3, 4]",
+  q13: "len()",
+  q14: "3",
+  q15: "{}",
+  q16: "None",
+  q17: "str()",
+  q18: "remove()",
+  q19: "Creates a set",
+  q20: "<class 'float'>",
 };
 
-const Introduction = () => {
+
+const DataTypes = () => {
   const [answers, setAnswers] = useState({});
   const [result, setResult] = useState(null);
 
@@ -194,7 +174,7 @@ const Introduction = () => {
       <div className="container mx-auto p-4 sm:p-8">
         <div className="bg-white shadow-lg rounded-lg p-6 sm:p-10 border-t-4 border-blue-500">
           <h1 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500 text-center mb-6">
-            1. INTRODUCTION TO PYTHON
+            2. DATA TYPES IN PYTHON
           </h1>
           <hr className="border-blue-300 mb-8" />
           <form className="space-y-6" onSubmit={handleSubmit}>
@@ -245,4 +225,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default DataTypes;

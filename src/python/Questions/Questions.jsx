@@ -7,7 +7,7 @@ const Questions = () => {
 
   const subjects = [
     { value: 'introduction', label: 'Introduction to Python', href: '/python/questions/introduction' },
-    { value: 'data-types', label: 'Data Types and Variables', href: '/python/questions/data-types',disabled:true },
+    { value: 'data-types', label: 'Data Types and Variables', href: '/python/questions/data-types',disabled:false },
     { value: 'control-flow', label: 'Control Flow: Loops and Conditional Statements', href: '/python/questions/control-flow',disabled:true },
     { value: 'functions-modules', label: 'Functions and Modules', href: '/python/questions/functions-modules',disabled:true },
     { value: 'data-structures', label: 'Working with Data: Lists, Dictionaries, and Tuples', href: '/python/questions/data-structures',disabled:true },
@@ -28,7 +28,8 @@ const Questions = () => {
       setError('Please fill out all fields.');
       return;
     }
-
+    // Save the username to localStorage
+    localStorage.setItem('userName', name);
     const selectedSubject = subjects.find((item) => item.value === subject);
     if (selectedSubject) {
       window.location.href = selectedSubject.href;
